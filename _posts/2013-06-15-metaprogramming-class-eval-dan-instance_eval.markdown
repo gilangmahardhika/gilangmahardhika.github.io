@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Metaprogramming : class_eval dan instance_eval"
-date:   2013-06-15 17:03:00
+date:   2013-06-15 20:00:00
 categories: metaprogramming
 ---
 
@@ -14,9 +14,9 @@ class Car
 end
 
 Car.class_eval do
-	def steer(direction)
-		"Steering #{direction}"
-	end
+  def steer(direction)
+   "Steering #{direction}"
+  end
 end
 
 car = Car.new
@@ -36,9 +36,9 @@ class Car
 end
 
 Car.instance_eval do
-	def print_name(name)
-		"Car name is #{name}"
-	end
+  def print_name(name)
+   "Car name is #{name}"
+  end
 end
 
 Car.print_name("Rubicon")
