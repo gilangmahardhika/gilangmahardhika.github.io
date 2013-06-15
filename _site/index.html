@@ -1,55 +1,117 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Raxx.us</title>
-        <meta name="viewport" content="width=device-width">
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+  <title>Raxx.us</title>
 
-    </head>
-    <body>
+  <link rel="stylesheet" href="/css/normalize.min.css">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/syntax.css">
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">Raxx.us</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
+  <script src="/js/vendor/custom.modernizr.js"></script>
 
-                <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    
-      <li><span>16 Jun 2013</span> &raquo; <a href="/metaprogramming/2013/06/16/metaprogramming-class-eval-dan-instance_eval.html">Metaprogramming : class_eval dan instance_eval</a></li>
-    
-      <li><span>14 Jun 2013</span> &raquo; <a href="/jekyll/update/2013/06/14/welcome-to-jekyll.html">Welcome to Jekyll!</a></li>
-    
-  </ul>
-</div>
+</head>
+<body>
 
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Gilang Mahardhika<br />
-                  Wanna be a full stack developer<br />
-                  gilangmahardhika@gmail.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/gilangmahardhika/">github.com/gilangmahardhika</a><br />
-                  <a href="http://twitter.com/gilangpm/">twitter.com/gilangpm</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
+  <!-- Nav Bar -->
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="nav-bar right">
+       <ul class="button-group">
+          <li><a href="/" class="button">Home</a></li>
+         <li><a href="#" class="button">About Me</a></li>
+        </ul>
+      </div>
+      <h1>Raxx.us <small></small></h1>
+      <hr />
+    </div>
+  </div>
 
-    </body>
+  <!-- End Nav -->
+  <!-- Main Page Content and Sidebar -->
+  <div class="row">
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+      
+  <article>
+    <h3>
+      <a href="/metaprogramming/2013/06/16/metaprogramming-class-eval-dan-instance_eval.html">Metaprogramming : class_eval dan instance_eval</a>
+    </h3>
+    <h6>Written by <a href="#">John Smith</a> on 16 Jun 2013.</h6>
+    <p>
+      <p><code>class_eval</code> dan <code>instance_eval</code> pada ruby memungkinkan anda untuk mengevaluasi kode atau objek tertentu. Dengan menggunakan <code>class_eval</code> kita dapat membuat sebuah instance method baru diluar kelas tersebut.</p>
+      <a href="/metaprogramming/2013/06/16/metaprogramming-class-eval-dan-instance_eval.html">Read more &rarr;</a>
+    </p>
+  </article>
+
+
+      <hr />
+    </div>
+    <!-- End Main Content -->
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+
+      <h5>Categories</h5>
+      <ul class="side-nav">
+        
+          <li><a name="metaprogramming">metaprogramming</a>
+            <ul>
+            
+              
+                <li><a href=""></a></li>
+              
+            
+              
+                <li><a href="/metaprogramming/2013/06/16/metaprogramming-class-eval-dan-instance_eval.html">Metaprogramming : class_eval dan instance_eval</a></li>
+              
+            
+            </ul>
+          </li>
+        
+      </ul>
+      <!-- <div class="panel">
+        <h5>Featured</h5>
+        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+        <a href="#">Read More &rarr;</a>
+      </div> -->
+
+    </aside>
+    <!-- End Sidebar -->
+  </div>
+  <!-- End Main Content and Sidebar -->
+  <!-- Footer -->
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>&copy; Raxx.us</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+  <!-- End Footer -->
+</body>
 </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>{{ page.title }}</title>
+
+  <link rel="stylesheet" href="/css/normalize.min.css">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+
+  <script src="/js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+  <!-- Nav Bar -->
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="nav-bar right">
+       <ul class="button-group">
+          <li><a href="/" class="button">Home</a></li>
+         <li><a href="#" class="button">About Me</a></li>
+        </ul>
+      </div>
+      <h1>{{ page.title }} <small></small></h1>
+      <hr />
+    </div>
+  </div>
+
+  <!-- End Nav -->
+  <!-- Main Page Content and Sidebar -->
+  <div class="row">
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+      {{ content }}
+      <hr />
+    </div>
+    <!-- End Main Content -->
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+
+      <h5>Categories</h5>
+      <ul class="side-nav">
+        {% for category in site.categories %}
+          <li><a name="{{ category | first }}">{{ category | first }}</a>
+            <ul>
+            {% for posts in category %}
+              {% for post in posts %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
+      <!-- <div class="panel">
+        <h5>Featured</h5>
+        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+        <a href="#">Read More &rarr;</a>
+      </div> -->
+
+    </aside>
+    <!-- End Sidebar -->
+  </div>
+  <!-- End Main Content and Sidebar -->
+  <!-- Footer -->
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>&copy; Raxx.us</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41763684-1', 'raxx.us');
+    ga('send', 'pageview');
+
+  </script>
+
+  <!-- End Footer -->
+</body>
+</html>

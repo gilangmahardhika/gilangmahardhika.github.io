@@ -7,6 +7,7 @@ categories: metaprogramming
 
 `class_eval` dan `instance_eval` pada ruby memungkinkan anda untuk mengevaluasi kode atau objek tertentu. Dengan menggunakan `class_eval` kita dapat membuat sebuah instance method baru diluar kelas tersebut.
 
+
 contohnya :
 {% highlight ruby %}
 class Car
@@ -24,6 +25,7 @@ car.steer("left")
 # Hasilnya
 "Steering left"
 {% endhighlight %}
+
 
 Dari kode tersebut bisa disimpulkan bahwa kita bisa membuat sebuah `instance method` baru dari `class Car` diluar dari kelas tersebut.
 
@@ -44,3 +46,4 @@ Car.print_name("Rubicon")
 # Hasilnya
 "Car name is Rubicon"
 {% endhighlight %}
+

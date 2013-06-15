@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Raxx.us</title>
+
+  <link rel="stylesheet" href="/css/normalize.min.css">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+
+  <script src="/js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+  <!-- Nav Bar -->
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="nav-bar right">
+       <ul class="button-group">
+          <li><a href="/" class="button">Home</a></li>
+         <li><a href="#" class="button">About Me</a></li>
+        </ul>
+      </div>
+      <h1>Raxx.us <small></small></h1>
+      <hr />
+    </div>
+  </div>
+
+  <!-- End Nav -->
+  <!-- Main Page Content and Sidebar -->
+  <div class="row">
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+      <div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    
+      <li><span>16 Jun 2013</span> &raquo; <a href="/metaprogramming/2013/06/16/metaprogramming-class-eval-dan-instance_eval.html">Metaprogramming : class_eval dan instance_eval</a></li>
+    
+  </ul>
+</div>
+      <hr />
+    </div>
+    <!-- End Main Content -->
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+
+      <h5>Categories</h5>
+      <ul class="side-nav">
+        
+          <li><a name="metaprogramming">metaprogramming</a>
+            <ul>
+            
+              
+                <li><a href=""></a></li>
+              
+            
+              
+                <li><a href="/metaprogramming/2013/06/16/metaprogramming-class-eval-dan-instance_eval.html">Metaprogramming : class_eval dan instance_eval</a></li>
+              
+            
+            </ul>
+          </li>
+        
+      </ul>
+      <!-- <div class="panel">
+        <h5>Featured</h5>
+        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+        <a href="#">Read More &rarr;</a>
+      </div> -->
+
+    </aside>
+    <!-- End Sidebar -->
+  </div>
+  <!-- End Main Content and Sidebar -->
+  <!-- Footer -->
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>&copy; Raxx.us</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+  <!-- End Footer -->
+</body>
+</html>
