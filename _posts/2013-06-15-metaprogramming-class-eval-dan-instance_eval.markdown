@@ -5,7 +5,7 @@ date:   2013-06-15 20:00:00
 categories: metaprogramming
 ---
 
-`class_eval` dan `instance_eval` pada ruby memungkinkan anda untuk mengevaluasi kode atau objek tertentu. Dengan menggunakan `class_eval` kita dapat membuat sebuah instance method baru diluar kelas tersebut.
+`class_eval` dan `instance_eval` pada ruby memungkinkan anda untuk mengevaluasi class atau objek tertentu. Dengan menggunakan `class_eval` kita dapat membuat sebuah instance method baru diluar kelas tersebut.
 
 
 contohnya :
